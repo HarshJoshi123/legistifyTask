@@ -5,7 +5,7 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
-import Select from '@mui/material/Select'; 
+import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
 
 
