@@ -1,17 +1,19 @@
 
 import './App.css';
 import configureStore from './redux/store'
-import { Provider,useSelector } from 'react-redux'
+import { Provider } from 'react-redux'
 import { createStore } from 'redux';
 import reducers from './redux/reducers'
 import Container from './components/container'
+import ButtonAppBar from './components/navbar.js'
 function App() {
   console.log(configureStore)
   const Store = createStore(reducers);
   return (
     <Provider store={Store}>
     <div className="App">
-     <Container  />
+     <ButtonAppBar/>
+     <Container />
     </div>
     </Provider>
   );
