@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid'
 import Modal from './modal.js'
 import React, { useState } from 'react';
 import Button from '@mui/material/Button'
-
+import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
 const Component = ({ data }) => {
     const [open, setOpen] = useState(false)
     const [av, setAv] = useState(null);
@@ -31,8 +31,8 @@ const Component = ({ data }) => {
             <CardContent>
                 <Grid container>
                     <Grid item className="Laywer name cost speciality" xs={2}>
-                        <h5>{data.name}</h5>
-                        <p> {data.cost} </p>
+                        <h3>{data.name}</h3>
+                        <h4 style={{display:'flex'}}> {data.cost} <CurrencyRupeeIcon/> </h4>
                         <p> Specialises in :</p>
                         <p> {data.speciality.map((spec, i) => <Chip label={spec} variant="contained" />)} </p>
                     </Grid>

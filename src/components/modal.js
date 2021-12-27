@@ -39,11 +39,12 @@ export default function Modal({ av, setAv, time, open, handleBook, handleClose, 
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
                                 value={av}
+                                style={{minWidth:'100px'}}
                                 label="Select Slot"
                                 onChange={(e) => setAv(e.target.value)}
                             >
                                 {av.map((time, i) => (
-                                    <MenuItem value={time}>{time}</MenuItem>
+                                    <MenuItem key={i} value={time}>{time}</MenuItem>
                                 ))}
                             </Select>
 
